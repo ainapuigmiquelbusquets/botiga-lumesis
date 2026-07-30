@@ -190,6 +190,13 @@
         .contacte a:hover {
             text-decoration: underline;
         }
+        .descripcio-amagada {
+    display: none;
+}
+
+.foto {
+    cursor: pointer;
+}
     </style>
 </head>
 
@@ -215,12 +222,11 @@
         <div class="botiga">
 
             <div class="producte">
-<div class="foto">
+<div class="foto" onclick="mostrarDescripcio()">
     <img src="projecte3.1" alt="Entre blaus i llum">
 </div>
 <h3 id="nom-producte">Entre blaus i llum</h3>
-
-<p id="descripcio-producte">
+<p id="descripcio-producte" class="descripcio-amagada">
     Una aquarel·la pintada a mà que captura un instant de calma entre el blau del mar i la llum del cel. Una peça única, creada amb delicadesa per transmetre la sensació de llibertat, serenitat i bellesa dels petits moments.
 </p>
 
@@ -270,7 +276,17 @@ function canviarIdioma(idioma) {
 
     document.getElementById("tornar-text").textContent = tornar[idioma];
 }
+function mostrarDescripcio() {
 
+    const descripcio = document.getElementById("descripcio-producte");
+
+    if (descripcio.style.display === "block") {
+        descripcio.style.display = "none";
+    } else {
+        descripcio.style.display = "block";
+    }
+
+}
 </script>
     <!-- CONTACTE -->
 
