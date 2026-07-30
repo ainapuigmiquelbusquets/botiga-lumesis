@@ -187,9 +187,9 @@
 <header>
 
     <h1>LUMESIS</h1>
-
-<a href="https://ainapuigmiquelbusquets.github.io/lumesis/" class="tornar">        TORNAR A LUMESIS
-    </a>
+<a href="https://ainapuigmiquelbusquets.github.io/lumesis/" class="tornar">
+    <span id="tornar-text">TORNAR A LUMESIS</span>
+</a>
 
     <div class="idiomes">
         <button onclick="canviarIdioma('ca')">CAT</button>
@@ -251,7 +251,14 @@ function canviarIdioma(idioma) {
 
     document.getElementById("nom-producte").textContent = textos[idioma].nom;
     document.getElementById("descripcio-producte").textContent = textos[idioma].descripcio;
+    const tornar = {
+        ca: "TORNAR A LUMESIS",
+        es: "VOLVER A LUMESIS",
+        fr: "RETOURNER À LUMESIS",
+        en: "BACK TO LUMESIS"
+    };
 
+    document.getElementById("tornar-text").textContent = tornar[idioma];
 }
 
 </script>
