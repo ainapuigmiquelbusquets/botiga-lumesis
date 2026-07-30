@@ -121,14 +121,41 @@
     gap: 15px;
 }
         }
+                .idiomes {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .idiomes button {
+            background: none;
+            border: none;
+            color: #8a7769;
+            font-size: 12px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .idiomes button:hover {
+            color: #b88b62;
+        }
     </style>
 </head>
 
 <body>
+<header>
 
-    <header>
-        <h1>LUMESIS</h1>
-    </header>
+    <h1>LUMESIS</h1>
+
+    <div class="idiomes">
+        <button onclick="canviarIdioma('ca')">CAT</button>
+        <button onclick="canviarIdioma('es')">ESP</button>
+        <button onclick="canviarIdioma('fr')">FR</button>
+        <button onclick="canviarIdioma('en')">EN</button>
+    </div>
+
+</header>
     <section class="productes">
 
 
