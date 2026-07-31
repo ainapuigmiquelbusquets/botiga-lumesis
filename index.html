@@ -275,7 +275,14 @@ function canviarIdioma(idioma) {
         fr: "RETOURNER À LUMESIS",
         en: "BACK TO LUMESIS"
     };
+const contacte = {
+    ca: "Contacte",
+    es: "Contacto",
+    fr: "Contact",
+    en: "Contact"
+};
 
+document.getElementById("titol-contacte").textContent = contacte[idioma];
     document.getElementById("tornar-text").textContent = tornar[idioma];
 }
 function mostrarDescripcio() {
@@ -294,8 +301,7 @@ function mostrarDescripcio() {
 
 <section class="contacte" id="contacte">
 
-    <h2>Contacte</h2>
-
+<h2 id="titol-contacte">Contacte</h2>
     <p>
         ✉️ Correu:
         <a href="mailto:ainapb.crea@gmail.com">
