@@ -209,13 +209,6 @@
     <span id="tornar-text">TORNAR A LUMESIS</span>
 </a>
 
-    <div class="idiomes">
-        <button onclick="canviarIdioma('ca')">CAT</button>
-        <button onclick="canviarIdioma('es')">ESP</button>
-        <button onclick="canviarIdioma('fr')">FR</button>
-        <button onclick="canviarIdioma('en')">EN</button>
-    </div>
-
 </header>
     <section class="productes">
 
@@ -241,46 +234,6 @@
     </section>
     <script>
 
-function canviarIdioma(idioma) {
-
-    const textos = {
-
-        ca: {
-            nom: "Entre blaus i llum",
-            descripcio: "Una aquarel·la pintada a mà que captura un instant de calma entre el blau del mar i la llum del cel. Una peça única, creada amb delicadesa per transmetre la sensació de llibertat, serenitat i bellesa dels petits moments."
-        },
-
-        es: {
-            nom: "Entre azules y luz",
-            descripcio: "Una acuarela pintada a mano que captura un instante de calma entre el azul del mar y la luz del cielo. Una pieza única, creada con delicadeza para transmitir la sensación de libertad, serenidad y belleza de los pequeños momentos."
-        },
-
-        fr: {
-            nom: "Entre bleus et lumière",
-            descripcio: "Une aquarelle peinte à la main qui capture un instant de calme entre le bleu de la mer et la lumière du ciel. Une pièce unique, créée avec délicatesse pour transmettre une sensation de liberté, de sérénité et la beauté des petits moments."
-        },
-
-        en: {
-            nom: "Between Blues and Light",
-            descripcio: "A hand-painted watercolor capturing a moment of calm between the blue of the sea and the light of the sky. A unique piece, delicately created to convey a sense of freedom, serenity and the beauty of small moments."
-        }
-
-    };
-
-    document.getElementById("nom-producte").textContent = textos[idioma].nom;
-    document.getElementById("descripcio-producte").textContent = textos[idioma].descripcio;
-    const tornar = {
-        ca: "TORNAR A LUMESIS",
-        es: "VOLVER A LUMESIS",
-        fr: "RETOURNER À LUMESIS",
-        en: "BACK TO LUMESIS"
-    };
-const contacte = {
-    ca: "Contacte",
-    es: "Contacto",
-    fr: "Contact",
-    en: "Contact"
-};
 
 document.getElementById("titol-contacte").textContent = contacte[idioma];
     document.getElementById("tornar-text").textContent = tornar[idioma];
