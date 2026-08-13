@@ -269,26 +269,23 @@
 
     </section>
     <script>
-
-
-document.getElementById("titol-contacte").textContent = contacte[idioma];
-    document.getElementById("tornar-text").textContent = tornar[idioma];
-}
 function mostrarDescripcio() {
-
     const descripcio = document.getElementById("descripcio-producte");
-
     if (descripcio.style.display === "block") {
         descripcio.style.display = "none";
     } else {
         descripcio.style.display = "block";
     }
-
 }
 
 function mostrarDescripcioProducte(id) {
     const descripcio = document.getElementById(id);
-    descripcio.style.display = descripcio.style.display === "block" ? "none" : "block";
+    if (!descripcio) return;
+    if (descripcio.style.display === "block") {
+        descripcio.style.display = "none";
+    } else {
+        descripcio.style.display = "block";
+    }
 }
 </script>
     <!-- CONTACTE -->
