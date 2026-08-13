@@ -229,6 +229,42 @@
     COMPRAR
 </a>
             </div>
+
+            <div class="producte">
+                <div class="foto" onclick="mostrarDescripcioProducte('descripcio-producte-2')">
+                    <img src="projecte7.2" alt="Espelmes Nude">
+                </div>
+                <h3>Espelmes Nude</h3>
+                <p id="descripcio-producte-2" class="descripcio-amagada">
+                    Les Espelmes Nude són espelmes artesanals fetes a mà amb cera pura de soja, creades per aportar calma, llum i calidesa a qualsevol racó. Cada peça és única, elaborada amb cura i dedicació, pensada per regalar-te petits moments de pau i convertir qualsevol espai en un lloc més especial.
+                </p>
+                <div class="preu">— €</div>
+                <a href="#" target="_blank" class="comprar">COMPRAR</a>
+            </div>
+
+            <div class="producte">
+                <div class="foto" onclick="mostrarDescripcioProducte('descripcio-producte-3')">
+                    <img src="projecte7.3" alt="Espelmes Nude">
+                </div>
+                <h3>Espelmes Nude</h3>
+                <p id="descripcio-producte-3" class="descripcio-amagada">
+                    Les Espelmes Nude són espelmes artesanals fetes a mà amb cera pura de soja, creades per aportar calma, llum i calidesa a qualsevol racó. Cada peça és única, elaborada amb cura i dedicació, pensada per regalar-te petits moments de pau i convertir qualsevol espai en un lloc més especial.
+                </p>
+                <div class="preu">— €</div>
+                <a href="#" target="_blank" class="comprar">COMPRAR</a>
+            </div>
+
+            <div class="producte">
+                <div class="foto" onclick="mostrarDescripcioProducte('descripcio-producte-4')">
+                    <img src="projecte7.4" alt="Espelmes Nude">
+                </div>
+                <h3>Espelmes Nude</h3>
+                <p id="descripcio-producte-4" class="descripcio-amagada">
+                    Les Espelmes Nude són espelmes artesanals fetes a mà amb cera pura de soja, creades per aportar calma, llum i calidesa a qualsevol racó. Cada peça és única, elaborada amb cura i dedicació, pensada per regalar-te petits moments de pau i convertir qualsevol espai en un lloc més especial.
+                </p>
+                <div class="preu">— €</div>
+                <a href="#" target="_blank" class="comprar">COMPRAR</a>
+            </div>
         </div>
 
     </section>
@@ -248,6 +284,11 @@ function mostrarDescripcio() {
         descripcio.style.display = "block";
     }
 
+}
+
+function mostrarDescripcioProducte(id) {
+    const descripcio = document.getElementById(id);
+    descripcio.style.display = descripcio.style.display === "block" ? "none" : "block";
 }
 </script>
     <!-- CONTACTE -->
